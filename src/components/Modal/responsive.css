@@ -1,0 +1,23 @@
+/*
+ small: 576px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+  xxlarge: 1400px,
+  ultrawide: 2560px
+*/
+
+/* ---- Responsive ---- */
+@media (max-width: 576px) 
+{
+    .modal > div
+    {
+        flex-direction: column;
+    }
+
+    .modal__main-content__title
+    {
+        padding-bottom: 25px;
+        border-bottom: Solid 3px #405d2a;
+    }
+}
