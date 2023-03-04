@@ -15,8 +15,8 @@ export default [
         plugins: [
             resolve(),
             babel({
-                babelHelpers: 'bundled',
-                exclude: ['node_modules/**']
+                exclude: ['node_modules/**'],
+                presets: ['@babel/preset-react']
             }),
             css({
                 minify: true
