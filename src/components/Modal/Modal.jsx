@@ -1,3 +1,6 @@
+//React
+import React from 'react';
+
 //Images
 import closeBtn from '../../assets/closeBtn.svg';
 import warningLogo from '../../assets/warningLogo.svg';
