@@ -1,6 +1,6 @@
 {
   "name": "anthony_lfb_modal_p14",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "React library to display a modal. This library was created as part of the project \"Faites passer une librairie jQuery vers React\" of OpenClassrooms",
   "repository": {
