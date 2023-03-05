@@ -3,7 +3,6 @@ import babel from '@rollup/plugin-babel';
 import external from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import svg from 'rollup-plugin-svg';
-import url from 'rollup-plugin-url';
 
 export default [
     {
@@ -24,11 +23,9 @@ export default [
                 plugins: [],
                 minimize: true
             }),
-            url({
-                include: ['**/*.svg', '**/*.png', '**/*.jpg', '**/*.gif'],
-                limit: 6000, //6kb
+            svg({
+                base64: true
             }),
-            svg(),
             external(),
         ]
     }
