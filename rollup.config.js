@@ -1,8 +1,9 @@
 import resolve from '@rollup/plugin-node-resolve';
 import babel from '@rollup/plugin-babel';
 import external from 'rollup-plugin-peer-deps-external';
-import css from 'rollup-plugin-import-css';
+import postcss from 'rollup-plugin-postcss';
 import svg from 'rollup-plugin-svg';
+import url from 'rollup-plugin-url';
 
 export default [
     {
@@ -15,14 +16,20 @@ export default [
         plugins: [
             resolve(),
             babel({
+                babelHelpers: 'bundled',
                 exclude: ['node_modules/**'],
                 presets: ['@babel/preset-react']
             }),
-            css({
-                minify: true
+            postcss({
+                plugins: [],
+                minimize: true
+            }),
+            url({
+                include: ['**/*.svg', '**/*.png', '**/*.jpg', '**/*.gif'],
+                limit: 6000, //6kb
             }),
             svg(),
-            external()
+            external(),
         ]
     }
 ]
