@@ -70,5 +70,5 @@ __Description__ : Message of the modal.
 We use useState() to define the state. By default the modal is not displayed.  
 ``const [modalStatus, setmodalStatus] = useState(false);``
 
-On utilise le composant comme ceci :  
+We use the component like this : 
 ``<Modal isOpen={modalStatus} setIsOpen={setmodalStatus} isScrollable={true} type={"informative"} iconToDisplay={null} title={"Hello world"} message={"If you open the modal, you will see me appear !"}/>``  
