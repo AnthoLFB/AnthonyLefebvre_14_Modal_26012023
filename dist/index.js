@@ -121,8 +121,7 @@ function getDefaultIcons(type) {
       defaultIcon = errorLogo;
       break;
     default:
-      console.log("An error has occurred. The default icons are not available.");
-      break;
+      return defaultIcon;
   }
   return defaultIcon;
 }
