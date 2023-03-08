@@ -41,8 +41,8 @@ By default the modal has 4 predefined types: "warning", "error", "success" and "
 Each type has a predefined style. If the user does not want to use one of these types, he puts "custom" instead.   
 `warning` : Allows to display a warning modal with a yellow style.   
 `error` : Allows to display an error modal with a red style.  
-`success` Allows to display a success modal with a green style.   
-`informative` Allows you to display a modal of information with a blue style.  
+`success` : Allows to display a success modal with a green style.   
+`informative` : Allows you to display a modal of information with a blue style.  
 `custom (or whatever you want)` : No style.  
 
 #### iconToDisplay  
@@ -53,8 +53,8 @@ If you want to use the predefined icons via the style, leave the props in null.
 If you want to use them on another type of modal put "typeLogo" in the props :  
 `warningLogo` : warning sign.   
 `errorLogo` : error sign.  
-`successLogo` success sign.   
-`informativeLogo` information sign.  
+`successLogo` : success sign.   
+`informativeLogo` : information sign.  
 `YourLogo` : Your custom logo. (You can name it whatever you want)   
 
 #### title  
