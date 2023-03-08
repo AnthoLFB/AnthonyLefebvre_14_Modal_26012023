@@ -1,0 +1,59 @@
+# Modal Component
+React library to display a modal. This library was created as part of the project "Faites passer une librairie jQuery vers React" of OpenClassrooms
+
+## Installation
+
+### NPM - Link
+https://www.npmjs.com/package/anthony_lfb_modal_p14
+
+### NPM - Command
+To install the modal via NPM run the following command: 
+`npm i anthony_lfb_modal_p14`
+
+## How it works
+
+### Importation
+The import of the component in your project is done via this line of code:
+`import {Modal} from 'anthony_lfb_modal_p14';`
+
+### Explanation of the functioning
+The component takes several props:
+
+#### isOpen
+Type : Boolean 
+Description : Boolean allowing to define the display state of the modal. 
+`True` the modal is displayed. 
+`False` the modal is not displayed.
+
+#### setIsOpen
+Description : is the useState() function of React to change the state of the modal
+
+#### isScrollable
+Type : Boolean 
+Description : Boolean allowing to define if the content in the background of the modal is scrollable or not. 
+`True` The content is scrollable. 
+`False` The content is not scrollable.
+
+#### type
+Type : Text 
+Description : This props allows you to define the type of modal to display. 
+By default the modal has 4 predefined types: "warning", "error", "success" and "informative". 
+Each type has a predefined style. If the user does not want to use one of these types, he puts "custom" instead. 
+`warning` : Allows to display a warning modal with a yellow style. 
+`error` : Allows to display an error modal with a red style.
+`success` Allows to display a success modal with a green style. 
+`informative` Allows you to display a modal of information with a blue style.
+`custom (or whatever you want)` : No style.
+
+#### iconToDisplay
+Type : Text 
+Description : Allows you to customize the icon to be displayed. If a predefined style is chosen, it has a predefined icon as well. (This one is still modifiable).
+
+#### title
+Type : Text 
+Description : Title of the modal. 
+
+#### message
+Type : Text 
+Description : Message of the modal. 
+
