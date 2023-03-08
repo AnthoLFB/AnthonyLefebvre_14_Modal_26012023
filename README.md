@@ -20,23 +20,23 @@ The import of the component in your project is done via this line of code:
 The component takes several props:  
 
 #### isOpen  
-Type : Boolean  
-Description : Boolean allowing to define the display state of the modal.   
+__Type__ : Boolean  
+__Description__ : Boolean allowing to define the display state of the modal.   
 `True` the modal is displayed.   
 `False` the modal is not displayed .  
 
 #### setIsOpen  
-Description : is the useState() function of React to change the state of the modal  
+__Description__ : is the useState() function of React to change the state of the modal  
 
 #### isScrollable  
-Type : Boolean   
-Description : Boolean allowing to define if the content in the background of the modal is scrollable or not.   
+__Type__ : Boolean   
+__Description__ : Boolean allowing to define if the content in the background of the modal is scrollable or not.   
 `True` The content is scrollable.   
 `False` The content is not scrollable.  
 
 #### type  
-Type : Text   
-Description : This props allows you to define the type of modal to display.   
+__Type__ : Text   
+__Description__ : This props allows you to define the type of modal to display.   
 By default the modal has 4 predefined types: "warning", "error", "success" and "informative".   
 Each type has a predefined style. If the user does not want to use one of these types, he puts "custom" instead.   
 `warning` : Allows to display a warning modal with a yellow style.   
@@ -46,14 +46,14 @@ Each type has a predefined style. If the user does not want to use one of these 
 `custom (or whatever you want)` : No style.  
 
 #### iconToDisplay  
-Type : Text   
-Description : Allows you to customize the icon to be displayed. If a predefined style is chosen, it has a predefined icon as well. (This one is still modifiable).  
+__Type__ : Text   
+__Description__ : Allows you to customize the icon to be displayed. If a predefined style is chosen, it has a predefined icon as well. (This one is still modifiable).  
 
 #### title  
-Type : Text   
-Description : Title of the modal.   
+__Type__ : Text   
+__Description__ : Title of the modal.   
 
 #### message  
-Type : Text   
-Description : Message of the modal.  
+__Type__ : Text   
+__Description__ : Message of the modal.  
 
