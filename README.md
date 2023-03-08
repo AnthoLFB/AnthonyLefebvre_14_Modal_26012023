@@ -47,7 +47,15 @@ Each type has a predefined style. If the user does not want to use one of these 
 
 #### iconToDisplay  
 __Type__ : Text   
-__Description__ : Allows you to customize the icon to be displayed. If a predefined style is chosen, it has a predefined icon as well. (This one is still modifiable).  
+__Description__ : Allows you to customize the icon to be displayed.   
+If a predefined style is chosen, it has a predefined icon as well. (This one is still modifiable).   
+If you want to use the predefined icons via the style, leave the props in null.  
+If you want to use them on another type of modal put "typeLogo" in the props :  
+`warningLogo` : warning sign.   
+`errorLogo` : error sign.  
+`successLogo` success sign.   
+`informativeLogo` information sign.  
+`YourLogo` : Your custom logo. (You can name it whatever you want)   
 
 #### title  
 __Type__ : Text   
@@ -57,3 +65,10 @@ __Description__ : Title of the modal.
 __Type__ : Text   
 __Description__ : Message of the modal.  
 
+### Example
+
+We use useState() to define the state. By default the modal is not displayed.  
+``const [modalStatus, setmodalStatus] = useState(false);``
+
+On utilise le composant comme ceci :  
+``<Modal isOpen={modalStatus} setIsOpen={setmodalStatus} isScrollable={true} type={"informative"} iconToDisplay={null} title={"Hello world"} message={"If you open the modal, you will see me appear !"}/>``  
