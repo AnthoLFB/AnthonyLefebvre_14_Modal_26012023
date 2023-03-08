@@ -1,13 +1,12 @@
 {
   "name": "anthony_lfb_modal_p14",
   "version": "1.0.7",
-  "type": "module",
   "description": "React library to display a modal. This library was created as part of the project \"Faites passer une librairie jQuery vers React\" of OpenClassrooms",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AnthoLFB/AnthonyLefebvre_14_Modal_26012023"
   },
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
